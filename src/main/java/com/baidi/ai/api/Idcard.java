@@ -26,8 +26,10 @@ public class Idcard {
         String url = "https://aip.baidubce.com/rest/2.0/ocr/v1/idcard";
         try {
             // 本地文件路径
-           // String filePath = "C:\\Users\\kanghao\\Pictures\\itcard_front.png" ; //"[本地文件路径]";
-            String filePath = "C:\\Users\\kanghao\\Pictures\\itcard_back.png" ; //"[本地文件路径]";
+            String filePath = "C:\\Users\\kanghao\\Pictures\\itcard_front.png" ; //"[本地文件路径]";
+
+
+            //String filePath = "C:\\Users\\kanghao\\Pictures\\itcard_back.png" ; //"[本地文件路径]";
 
             byte[] imgData = FileUtil.readFileByBytes(filePath);
             String imgStr = Base64Util.encode(imgData);
